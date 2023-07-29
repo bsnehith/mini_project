@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/result.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      .image-container {
+        display: flex;
+        margin: 20px;
+        height: 256px;
+      }
+      .image-container .image-wrapper {
+        height: 256px;
+        display: inline-block;
+        margin: 0 20px; /* Increase horizontal margin */
+      }
+      
+      .image-container .image-wrapper img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Prediction Result</h1>
+    <div class="image-container">
+      <div class="image-wrapper">
+        <p>Input Image:</p>
+        <img src="{{ input_image }}" alt="Input">
+      
+      </div>
+      <br>
+      <div class="image-wrapper">
+        <p>Predicted Image:</p>
+        <img src="{{ result_image }}" alt="Prediction">
+      </div>
+    </div>
+  </body>
+</html>

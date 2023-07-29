@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  width: 100%;
+  background-image: url("https://images.pexels.com/photos/4226219/pexels-photo-4226219.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+form{
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+input[type="file"]{
+  color: transparent;
+  background: #fff url('upload.png') no-repeat center center;
+  background-size: 100%;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+.custom-file-input:hover {
+  opacity: 0.8;
+}
+.custom-file-input:active {
+  transform: scale(0.98);
+}
+label{
+  display: inline-block;
+  background-color: rgb(2, 28, 20);
+  color:bisque;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+input[type="submit"] {
+  background-color: #4CAF50; 
+  border: none; 
+  color: white; 
+  padding: 15px 32px; 
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block; 
+  font-size: 16px;
+  margin: 4px 2px; 
+  cursor: pointer;
+}
+label i{
+  margin-right: 5px;
+}
+label:hover{
+  background-color: #2980b9;
+}
+label:hover i{
+  color: #fff;
+}
